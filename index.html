@@ -25,6 +25,7 @@ function supportedFirmware() {
         (fwNum >= 13.02 && fwNum <= 13.52);
 }
 document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("detectedFirmware").textContent = isPS4 ? fwVersion : "Unknown (not PS4)";
     document.getElementById("startJailbreakBtn").disabled = !isPS4 || !supportedFirmware();
     if (!isPS4) msgs.textContent = "Only for PS4 with Firmware 5.05 and 7.00 to 13.52";
     else if (!supportedFirmware()) msgs.textContent = "Unsupported Firmware: " + fwVersion;
@@ -127,7 +128,7 @@ if (!isPS4) {
   <div class="status-card">
     <div class="status-head">
       <div class="ready-state"><span class="ready-dot"></span><span>Ready</span></div>
-      <div class="meta">Firmware Supported: <span class="firmware-number">5.05 / 7.00 – 13.52</span></div>
+      <div class="meta">Firmware Detected: <span id="detectedFirmware" class="firmware-number">Detecting...</span></div>
     </div>
     <h1 id="msgs" class="g2all-msg">Ready — Click the PlayStation logo</h1>
   </div>

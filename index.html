@@ -40,7 +40,6 @@ function startJailbreak() {
 if (jailbreakStarted || !isPS4 || !supportedFirmware()) return;
 jailbreakStarted = true;
 document.getElementById("startJailbreakBtn").disabled = true;
-document.getElementById("startPrompt").textContent = "Starting Jailbreak...";
 msgs.textContent = "Loading GoldHEN... Please Wait";
 if (!isPS4) {
     document.addEventListener("DOMContentLoaded", () => {
@@ -121,7 +120,6 @@ if (!isPS4) {
 }
 </script>
 <main class="g2all-center">
-  
   <button id="startJailbreakBtn" class="logo-start-btn" type="button" onclick="startJailbreak()" aria-label="Start Jailbreak" disabled>
     <img src="playstation-logo.png" alt="PlayStation" width="300" height="200">
   </button>

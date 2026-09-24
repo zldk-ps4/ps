@@ -41,7 +41,7 @@ const STOP_BEFORE_DOUBLE = params.get("stop") === "beforedouble";
 function hostOk() {
     var m = document.getElementById("msgs");
     if (m) {
-        m.innerHTML = "GoldHEN Loaded Successfully";
+        m.innerHTML = "<span class=\"gold\">GoldHEN</span> Loaded Successfully";
     }
 }
 
@@ -455,7 +455,7 @@ let payloadRunning = false;
                 mark("ALREADY-ROOT", "getuid=" + uid0 + " setuid(0)=" + su0);
                 var m = document.getElementById("msgs");
                 if (m) {
-                    m.innerHTML = "GoldHEN is Already Loaded ...";
+                    m.innerHTML = "<span class=\"gold\">GoldHEN</span> is Already Loaded ...";
                 }
                 return;
             }

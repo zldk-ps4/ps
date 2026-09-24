@@ -275,7 +275,7 @@ body{
   text-transform:uppercase;
 }
 
-.gold{color:#88e4ff;text-shadow:0 0 14px rgba(70,192,255,.3)}
+.gold{color:#f2c94c;text-shadow:0 0 6px rgba(255,215,100,.35),0 0 12px rgba(255,196,60,.28),0 0 20px rgba(214,149,22,.22);font:inherit;letter-spacing:inherit}
 
 .cache-wrap{width:940px}
 .cache-wrap .status-card{margin:0 auto}
@@ -321,3 +321,4 @@ body{
   .start-jailbreak-btn{min-width:0;width:100%;max-width:390px}
   .g2all-msg,.cache-msg{font-size:18px}
 }
+

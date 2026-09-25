@@ -272,7 +272,7 @@ body{
   line-height:1.3;
   font-weight:500;
   letter-spacing:.65px;
-  text-transform:uppercase;
+  text-transform:none;
 }
 
 .gold{color:#f2c94c;text-shadow:0 0 6px rgba(255,215,100,.35),0 0 12px rgba(255,196,60,.28),0 0 20px rgba(214,149,22,.22);font:inherit;letter-spacing:inherit}
@@ -303,7 +303,7 @@ body{
   .g2all-center,.cache-wrap{top:48%}
   .status-card{min-height:170px;padding:26px 30px}
   .start-jailbreak-btn{min-width:390px;margin-bottom:20px;padding:17px 38px;font-size:22px}
-  .g2all-msg,.cache-msg{font-size:22px}
+  .g2all-msg,.cache-msg{font-size:23px}
   .g2all-footer{margin-top:10px}
 }
 
@@ -322,3 +322,64 @@ body{
   .g2all-msg,.cache-msg{font-size:18px}
 }
 
+/* Console inspired theme shared by the main and offline cache screens. */
+.g2all-page,.cache-page{
+  background:
+    radial-gradient(ellipse at 13% 24%,rgba(16,104,246,.37),transparent 35%),
+    radial-gradient(ellipse at 83% 18%,rgba(118,56,210,.31),transparent 35%),
+    radial-gradient(ellipse at 78% 81%,rgba(32,185,87,.24),transparent 34%),
+    radial-gradient(ellipse at 20% 82%,rgba(228,69,75,.17),transparent 31%),
+    linear-gradient(135deg,#040913 0%,#0b1530 48%,#0a1621 100%);
+}
+.g2all-page:before,.cache-page:before{
+  background:
+    radial-gradient(circle at center,transparent 25%,rgba(1,5,16,.48) 100%);
+}
+.g2all-page:after,.cache-page:after{
+  background:linear-gradient(90deg,transparent,#286bed 23%,#7c48e6 48%,#25bd64 75%,transparent);
+  opacity:.55;
+}
+.g2all-center,.cache-wrap{width:1050px}
+.logo-start-btn{width:392px;margin-bottom:30px}
+.logo-start-btn img{
+  filter:drop-shadow(0 15px 29px rgba(0,0,0,.48)) drop-shadow(0 0 23px rgba(66,143,255,.28));
+}
+.status-card{
+  width:995px;
+  min-height:220px;
+  padding:38px 41px 36px;
+  border-color:rgba(120,167,250,.27);
+  background:linear-gradient(145deg,rgba(11,22,47,.94),rgba(16,23,47,.91) 54%,rgba(8,34,39,.90));
+  box-shadow:0 27px 75px rgba(1,5,18,.59),0 0 50px rgba(31,112,238,.10),inset 0 1px 0 rgba(255,255,255,.10);
+}
+.status-card:before{
+  background:linear-gradient(90deg,transparent,#3c92ff 20%,#895aec 48%,#38d077 80%,transparent);
+}
+.status-head{margin-bottom:25px;padding-bottom:20px}
+.ready-state{font-size:20px}
+.ready-dot{width:11px;height:11px;flex-basis:11px}
+.meta{font-size:17px}
+.firmware-number{font-size:20px}
+.g2all-msg,.cache-msg{font-size:30px}
+.cache-hint{font-size:18px}
+.progress-shell{height:10px}
+.progress-bar{background:linear-gradient(90deg,#419aff,#7959e7 52%,#39c977)}
+.g2all-footer{font-size:17px;letter-spacing:1.1px;color:#bfd3f3;margin-top:22px;text-shadow:0 0 14px rgba(64,134,255,.22)}
+@media(max-height:760px){
+  .logo-start-btn{width:327px;margin-bottom:21px}
+  .status-card{min-height:184px;padding:29px 34px}
+  .g2all-msg,.cache-msg{font-size:24px}
+  .g2all-footer{margin-top:12px}
+}
+@media(max-width:900px){
+  .status-card{min-height:191px;padding:29px 27px}
+  .g2all-msg,.cache-msg{font-size:23px}
+  .meta{font-size:14px}
+  .ready-state{font-size:16px}
+}
+@media(max-width:560px){
+  .logo-start-btn{width:296px;max-width:85%}
+  .status-card{padding:25px 21px}
+  .g2all-msg,.cache-msg{font-size:20px}
+  .g2all-footer{font-size:14px}
+}
